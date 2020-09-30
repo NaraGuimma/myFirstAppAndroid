@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMtKm"
+        android:layout_width="167dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="26dp"
+        android:text="Convert Meters into Km"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKmMt" />
+
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="#403B80"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Choose one of the options"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/btnKmMt"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Km to m"
+        android:textColor="#FAF8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKmMt" />
+
+    <TextView
+        android:id="@+id/txtKmMt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="30dp"
+        android:text="Convert Km into Meters"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnKmMt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/btnMtKm"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="m to Km"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMtKm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
